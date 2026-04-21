@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top Stock & Fund Lists</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Market Watchlists</h1>
+      <p class="subtitle">
+        A simple dashboard showing requested top stock/fund/crypto categories.
+      </p>
+
+      <div class="controls">
+        <input id="search" type="search" placeholder="Search by name or ticker..." />
+        <label>
+          Sort by
+          <select id="sort-by">
+            <option value="rank">Rank</option>
+            <option value="name">Name</option>
+            <option value="ticker">Ticker</option>
+            <option value="score">Score</option>
+          </select>
+        </label>
+      </div>
+
+      <section id="lists" class="lists"></section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
